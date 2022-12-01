@@ -1,0 +1,21 @@
+:root {
+  --text-base: #afb6c2;
+  --text-button: #d4ccb6;
+  --focus-color: #ffde88;
+  --background: #191816;
+  --border-input: #868686;
+  --form-background: #24221f;
+  --primary-color: #ffc632;
+  --background-geral: #24221f;
+}
+
+body {
+  background-color: var(--background);
+  font-family: "Poppins", "Roboto, " sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
