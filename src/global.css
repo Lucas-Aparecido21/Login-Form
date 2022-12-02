@@ -19,3 +19,9 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+
+
+
+:focus{
+box-shadow: 0 0 0 2px var(--primary-color);
+}
