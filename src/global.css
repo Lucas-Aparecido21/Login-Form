@@ -1,3 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
 :root {
   --text-base: #afb6c2;
   --text-button: #d4ccb6;
@@ -14,11 +21,6 @@ body {
   font-family: "Poppins", "Roboto, " sans-serif;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 
 

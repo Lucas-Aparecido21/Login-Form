@@ -1,6 +1,6 @@
 import React from "react";
 import "./Form.modules.css";
-import {SignIn} from 'phosphor-react';
+import {EnvelopeSimple, SignIn} from 'phosphor-react';
 import  imagem from '../assets/side-image.svg'
 
 export function Form() {
@@ -20,15 +20,20 @@ export function Form() {
             <SignIn className="iconSign"/>
             <b>Faça seu login</b>
             <p>Entre com as suas informações de cadastro.</p>
+            
             <p>E-mail</p>
-            <input type="text" placeholder="Digite seu e-mail"></input>
+            <input type="text" placeholder="Digite seu e-mail">  </input>
+            <EnvelopeSimple className="iconEvelope"/>
             <p>Senha</p>
-            <input type="password" placeholder="Digite sua senha"></input>
-            <button type="submit">w</button>
-            <p>Lembre-me</p>
-          
-            <p>Esqueci minha senha</p>
-            <button type="submit">ENTRAR</button>
+            <input type="password" placeholder="Digite sua senha">    </input>
+            <button type="submit" className="lembrar">w</button>
+            <div className="esqueci">
+   
+            <p >Lembre-me</p>
+
+            <a href="#">Esqueci minha senha</a>
+            </div>
+            <button type="submit" className="entrar">ENTRAR</button>
 
             <p>Não tem uma conta? Registre-se</p>
           </form>
@@ -36,7 +41,10 @@ export function Form() {
         </div>
 
       </div>
-      <img src={imagem} alt="tete"/>
+      <img src={imagem} alt="teste"/>
+      
     </div>
+
+    
    );
 }

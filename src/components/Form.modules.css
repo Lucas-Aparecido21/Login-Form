@@ -1,6 +1,9 @@
 body {
   font-family: "Poppins", sans-serif;
   color: var(--text-base);
+  max-height: 100vh;
+  max-width: 100vw;
+
 }
 
 .formLoginDiv1 {
@@ -9,11 +12,12 @@ body {
   grid-template-columns: 1fr 1fr;
   display: grid;
   align-items: center;
-  justify-content: center;
+  justify-content:space-between;
 }
 .formLoginDiv1 img{
-  height: 49.2rem;
-  width: 100%;
+height: 40px;
+width: 40px;
+
 }
 
 .formLoginDiv2 {
@@ -28,12 +32,11 @@ body {
 .formLogin {
   background-color: var(--form-background);
   width: 100%;
-  height: 35,75rem;
   justify-content: center;
   padding: 3.44rem 6.8rem;
   margin-left: -1rem;
   text-align:left;
-
+  display: flex;
 }
 
 .formLogin b{
@@ -42,10 +45,41 @@ body {
   
 }
 
+.entrar{
+  width: 20rem;
+  height: 3.1875rem;
+  background-color: var(--primary-color);
+  color:var(--background);
+  border-radius: 7px;
+
+}
+
+.formLogin a{
+  color:var(--primary-color);
+}
+
+
 .formLogin input{
 background-color: var(--form-background);
-border-radius: 2px;
+border-radius: 5px;
+border-color: var(--text-base);
 
+width: 20rem;
+height: 2.75rem;
+font-size: 14px;
+color:var(--text-base);
+}
+
+.esqueci{
+display: flex;
+justify-content: space-between;
+padding: 0 0 12px;
+gap: 12px;
+}
+
+.lembrar{
+  margin-bottom: 2px;  
+  display: flex;
 }
 
 .iconSign{
