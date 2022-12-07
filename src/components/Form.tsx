@@ -1,6 +1,10 @@
-import React from "react";
 import "./Form.modules.css";
-import { EnvelopeSimple, SignIn } from "phosphor-react";
+import {
+  SignIn,
+  EnvelopeSimple,
+  LockSimple,
+  LockSimpleOpen,
+} from "phosphor-react";
 import imagem from "../assets/side-image.png";
 
 export function Form() {
@@ -18,17 +22,26 @@ export function Form() {
 
               <div className="divEmail">
                 <p>E-mail</p>
-
-                <input type="text" placeholder=" Digite seu e-mail"></input>
+                <EnvelopeSimple className="envelope" />
+                <input
+                  type="text"
+                  placeholder=" Digite seu e-mail"
+                  required
+                ></input>
               </div>
 
               <div className="divSenha">
                 <p>Senha</p>
-                <input type="password" placeholder="Digite sua senha"></input>
+                <LockSimple className="cadeado" />
+                <input
+                  type="password"
+                  placeholder="Digite sua senha"
+                  required
+                ></input>
               </div>
 
               <div className="esqueci">
-                <button type="submit" className="lembrar" />
+                {/* <button type="submit" className="lembrar" /> */}
 
                 <p>Lembre-me</p>
 
@@ -40,7 +53,9 @@ export function Form() {
                   ENTRAR
                 </button>
 
-                <p>Não tem uma conta? Registre-se</p>
+                <p>
+                  Não tem uma conta? <a href="#">Registre-se </a>
+                </p>
               </div>
             </form>
           </div>

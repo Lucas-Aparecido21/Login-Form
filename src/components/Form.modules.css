@@ -70,25 +70,54 @@ body {
 .formLogin input {
   background-color: var(--form-background);
   border-radius: 5px;
-  border-color: var(--text-base);
+  box-shadow: 0 0 0 2px var(--text-base);
   text-align: start;
   width: 20rem;
+  font-family: "Roboto";
+  font-weight: bold;
   height: 2.75rem;
   font-size: 14px;
   color: var(--text-base);
+  padding: 0 2.5rem 0;
+  border: none;
 }
 
 .divSenha {
   padding: 0 0 1rem;
+  font-family: "Poppins";
+  font-weight: medium;
+  position: relative;
 }
 
 .divEmail {
   padding: 0 0 1rem;
+  font-family: "Poppins";
+  font-weight: medium;
+  position: relative;
 }
+
+.envelope {
+  width: 14%;
+  position: absolute;
+  height: 41%;
+  padding-top: 9px;
+}
+
+.cadeado {
+  width: 14%;
+  position: absolute;
+  height: 41%;
+  padding-top: 9px;
+}
+
 .esqueci {
   display: flex;
   padding: 0 0 12px;
   gap: 0.5rem;
+}
+
+.esqueci a {
+  padding: 0 15px 5px;
 }
 
 .esqueci button {
@@ -107,9 +136,14 @@ body {
 .iconSign {
   color: var(--primary-color);
   font-size: 1.5rem;
+  align-items: center;
+  vertical-align: sub;
 }
 
 .footer {
   color: var(--primary-color);
   font-size: 14px;
+}
+.footer p {
+  padding: 12px 2.5rem;
 }
