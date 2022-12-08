@@ -20,14 +20,6 @@ body {
   font-family: "Poppins", "Roboto, " sans-serif;
 }
 
-/* input:focus {
-  box-shadow: 0 0 0 2px var(--primary-color);
-  outline: transparent;
-  border-color: transparent;
-  box-shadow: none;
-  background-color: transparent;
-} */
-
 :focus {
   box-shadow: transparent;
   outline: transparent;

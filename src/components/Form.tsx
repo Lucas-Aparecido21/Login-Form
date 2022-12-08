@@ -3,7 +3,7 @@ import {
   SignIn,
   EnvelopeSimple,
   LockSimple,
-  LockSimpleOpen,
+  CheckCircle,
 } from "phosphor-react";
 import imagem from "../assets/side-image.png";
 
@@ -24,8 +24,9 @@ export function Form() {
                 <p>E-mail</p>
                 <EnvelopeSimple className="envelope" />
                 <input
+                  className="input1"
                   type="text"
-                  placeholder=" Digite seu e-mail"
+                  placeholder="Digite seu e-mail"
                   required
                 ></input>
               </div>
@@ -34,6 +35,7 @@ export function Form() {
                 <p>Senha</p>
                 <LockSimple className="cadeado" />
                 <input
+                  className="input2"
                   type="password"
                   placeholder="Digite sua senha"
                   required
@@ -41,7 +43,7 @@ export function Form() {
               </div>
 
               <div className="esqueci">
-                {/* <button type="submit" className="lembrar" /> */}
+                <input type="checkbox" className="checkboxLembrar" />
 
                 <p>Lembre-me</p>
 
@@ -54,7 +56,7 @@ export function Form() {
                 </button>
 
                 <p>
-                  Não tem uma conta? <a href="#">Registre-se </a>
+                  Não tem uma conta? <a href="#"> Registre-se </a>
                 </p>
               </div>
             </form>
