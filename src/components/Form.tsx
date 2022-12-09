@@ -1,10 +1,7 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
+import React from "react";
 import "./Form.modules.css";
-import {
-  SignIn,
-  EnvelopeSimple,
-  LockSimple,
-  CheckCircle,
-} from "phosphor-react";
+import { SignIn, EnvelopeSimple, LockSimple, Eye } from "phosphor-react";
 import imagem from "../assets/side-image.png";
 
 export function Form() {
@@ -34,12 +31,14 @@ export function Form() {
               <div className="divSenha">
                 <p>Senha</p>
                 <LockSimple className="cadeado" />
+
                 <input
                   className="input2"
                   type="password"
                   placeholder="Digite sua senha"
                   required
                 ></input>
+                <Eye className="olho" />
               </div>
 
               <div className="esqueci">

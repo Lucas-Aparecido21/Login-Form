@@ -126,6 +126,13 @@ body {
   padding-top: 9px;
 }
 
+.olho {
+  position: absolute;
+  align-items: center;
+  height: 41%;
+  padding-top: 9px;
+}
+
 .esqueci {
   display: flex;
   padding: 0 0 12px;
@@ -140,7 +147,6 @@ body {
   background-color: transparent;
   border: 2px solid var(--primary-color);
   border-radius: 3px;
-
   -webkit-appearance: none;
 }
 
@@ -148,7 +154,6 @@ body {
   background-image: url("../assets/check.svg");
   background-size: cover;
   background-position: center;
-  background-color: aqua;
 }
 
 .esqueci a {
