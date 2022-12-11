@@ -1,10 +1,29 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from "react";
+import React  from "react";
+
 import "./Form.modules.css";
 import { SignIn, EnvelopeSimple, LockSimple, Eye } from "phosphor-react";
 import imagem from "../assets/side-image.png";
 
-export function Form() {
+export function Form(event: any) {
+  const [values, setValues] = React.useState({
+    password: "",
+    showPassword: false,
+  });
+  
+  const handleClickShowPassword = () => {
+    setValues({ ...values, showPassword: !values.showPassword });
+  };
+  
+  const handleMouseDownPassword = (event: { preventDefault: () => void; }) => {
+    event.preventDefault();
+  };
+  
+  const handlePasswordChange = (prop: any) => (event: { target: { value: any; }; }) => {
+    setValues({ ...values, [prop]: event.target.value });
+  };
+  
+
   return (
     <>
       <div className="formLoginDiv1">
@@ -34,9 +53,12 @@ export function Form() {
 
                 <input
                   className="input2"
-                  type="password"
+                  type={values.showPassword ? "text" : "password"}
+                  onChange={handlePasswordChange("password")}
+                  value={values.password}
                   placeholder="Digite sua senha"
                   required
+        
                 ></input>
                 <Eye className="olho" />
               </div>

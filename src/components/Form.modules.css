@@ -128,9 +128,11 @@ body {
 
 .olho {
   position: absolute;
-  align-items: center;
-  height: 41%;
-  padding-top: 9px;
+
+  height: 2.5rem;
+  padding-top: 3px;
+  margin-left: -2rem;
+  width: 1.3rem;
 }
 
 .esqueci {
