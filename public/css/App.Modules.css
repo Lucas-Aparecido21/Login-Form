@@ -1,0 +1,187 @@
+@media (max-width: 966px) {
+  .divImg {
+    display: none;
+  }
+
+  .formLoginDiv1 {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: none;
+    align-items: center;
+  }
+}
+
+@media (max-width: 575px) {
+  .formLogin {
+    background-color: var(--background);
+    width: 100%;
+  }
+
+  .input1 {
+    width: 25rem;
+  }
+
+  .input2 {
+    width: 25rem;
+  }
+
+  .envelope {
+    width: 2.8rem;
+    height: 2.2rem;
+  }
+
+  .cadeado {
+    width: 2.8rem;
+    height: 2.2rem;
+  }
+
+  .esqueci a {
+    padding-left: 6.18rem;
+  }
+  .entrar {
+    width: 25rem;
+  }
+
+  .footer p {
+    padding: 12px 5rem;
+  }
+}
+@media (min-width: 400px) and (max-width: 439px) {
+  .divSenha {
+    padding: 0;
+  }
+  .divEmail {
+    padding: 0 0 1rem;
+  }
+  body {
+    padding-left: 0.5rem;
+  }
+
+  .input1 {
+    width: 22rem;
+  }
+
+  .input2 {
+    width: 22rem;
+
+  }
+
+  .entrar {
+    width: 22rem;
+
+}
+
+.esqueci {
+  font-size: 13px;
+}
+
+
+
+@media (min-width: 320px) and (max-width: 369px) {
+  .formLogin {
+    background-color: var(--background);
+    width: 100%;
+  }
+
+  .input1 {
+    width: 18rem;
+  }
+
+  .input2 {
+    width: 18rem;
+  }
+
+  .envelope {
+    width: 2.8rem;
+    height: 2.2rem;
+  }
+
+  .cadeado {
+    width: 2.8rem;
+    height: 2.2rem;
+  }
+
+  .esqueci a {
+    padding-left: 0.1rem;
+  }
+  .esqueci {
+    font-size: 15px;
+  }
+
+  .entrar {
+    width: 18rem;
+  }
+
+  .footer p {
+    padding: 12px 1rem;
+  }
+
+  .divEmail {
+    padding: 0;
+  }
+
+  .divSenha {
+    padding: 0;
+  }
+
+  body {
+    margin: 0;
+
+    padding-left: 0.3rem;
+  }
+}
+
+@media (min-width: 370px) and (max-width: 399px) {
+  .formLogin {
+    background-color: var(--background);
+    width: 100%;
+  }
+
+  .input1 {
+    width: 20rem;
+  }
+
+  .input2 {
+    width: 20rem;
+  }
+
+  .envelope {
+    width: 2.8rem;
+    height: 2.2rem;
+  }
+
+  .cadeado {
+    width: 2.8rem;
+    height: 2.2rem;
+  }
+
+  .esqueci a {
+    padding-left: 0.1rem;
+  }
+  .esqueci {
+    font-size: 15px;
+  }
+
+  .entrar {
+    width: 20rem;
+  }
+
+  .footer p {
+    padding: 12px 1rem;
+  }
+
+  .divEmail {
+    padding: 0;
+  }
+
+  .divSenha {
+    padding: 0;
+  }
+
+  body {
+    margin: 0;
+
+    padding-left: 0.3rem;
+  }
+}

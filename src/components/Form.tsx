@@ -1,8 +1,13 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React  from "react";
+import React from "react";
 import { IconButton } from "@mui/material";
-import "./Form.modules.css";
-import { SignIn, EnvelopeSimple, LockSimple, Eye, EyeSlash } from "phosphor-react";
+import {
+  SignIn,
+  EnvelopeSimple,
+  LockSimple,
+  Eye,
+  EyeSlash,
+} from "phosphor-react";
 import imagem from "../assets/side-image.png";
 
 export function Form(event: any) {
@@ -10,23 +15,19 @@ export function Form(event: any) {
     password: "",
     showPassword: false,
   });
-  
 
+  const handlePasswordChange =
+    (prop: any) => (event: { target: { value: any } }) => {
+      setValues({ ...values, [prop]: event.target.value });
+    };
 
-  
-  const handlePasswordChange = (prop: any) => (event: { target: { value: any; }; }) => {
-    setValues({ ...values, [prop]: event.target.value });
-
-  };
-  
   const handleClickShowPassword = () => {
     setValues({ ...values, showPassword: !values.showPassword });
   };
-  
-  const handleMouseDownPassword = (event:any) => {
+
+  const handleMouseDownPassword = (event: any) => {
     event.preventDefault();
   };
-  
 
   return (
     <>
@@ -62,24 +63,15 @@ export function Form(event: any) {
                   value={values.password}
                   placeholder="Digite sua senha"
                   required
-              
-          
-                   
-    
-                  
-        
                 ></input>
 
-                      <IconButton
-                        className="olho"
-                        onClick={handleClickShowPassword}
-                        onMouseDown={handleMouseDownPassword}
-                          >
-                        {values.showPassword ? <EyeSlash /> : <Eye/>}
-                      </IconButton>
-             
-         
-
+                <IconButton
+                  className="olho"
+                  onClick={handleClickShowPassword}
+                  onMouseDown={handleMouseDownPassword}
+                >
+                  {values.showPassword ? <EyeSlash /> : <Eye />}
+                </IconButton>
               </div>
 
               <div className="esqueci">

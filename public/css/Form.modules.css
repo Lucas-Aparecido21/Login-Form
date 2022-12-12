@@ -43,7 +43,7 @@ body {
   width: 35.75rem;
   justify-content: center;
   align-items: center;
-  margin-left: -1rem;
+
   text-align: left;
   display: flex;
   height: 30rem;
@@ -127,9 +127,9 @@ body {
 }
 
 .olho {
-  position: absolute; 
+  position: absolute;
   left: -3rem;
-  color: var(--text-base)!important;
+  color: var(--text-base) !important;
 }
 
 .esqueci {
@@ -146,13 +146,14 @@ body {
   background-color: transparent;
   border: 2px solid var(--primary-color);
   border-radius: 3px;
-  -webkit-appearance: none;
+  appearance: none;
 }
 
 .checkboxLembrar:checked {
   background-image: url("../assets/check.svg");
   background-size: cover;
   background-position: center;
+  background-color: var(--primary-color);
 }
 
 .esqueci a {
