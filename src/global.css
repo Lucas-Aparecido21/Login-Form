@@ -30,7 +30,4 @@ input:focus {
   outline: transparent;
 }
 
-input:focus .svg {
-  color: #ffc632;
-  background-color: aquamarine;
-}
+

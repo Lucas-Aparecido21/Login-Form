@@ -1,8 +1,8 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React  from "react";
-
+import { IconButton } from "@mui/material";
 import "./Form.modules.css";
-import { SignIn, EnvelopeSimple, LockSimple, Eye } from "phosphor-react";
+import { SignIn, EnvelopeSimple, LockSimple, Eye, EyeSlash } from "phosphor-react";
 import imagem from "../assets/side-image.png";
 
 export function Form(event: any) {
@@ -11,16 +11,20 @@ export function Form(event: any) {
     showPassword: false,
   });
   
+
+
+  
+  const handlePasswordChange = (prop: any) => (event: { target: { value: any; }; }) => {
+    setValues({ ...values, [prop]: event.target.value });
+
+  };
+  
   const handleClickShowPassword = () => {
     setValues({ ...values, showPassword: !values.showPassword });
   };
   
-  const handleMouseDownPassword = (event: { preventDefault: () => void; }) => {
+  const handleMouseDownPassword = (event:any) => {
     event.preventDefault();
-  };
-  
-  const handlePasswordChange = (prop: any) => (event: { target: { value: any; }; }) => {
-    setValues({ ...values, [prop]: event.target.value });
   };
   
 
@@ -58,9 +62,24 @@ export function Form(event: any) {
                   value={values.password}
                   placeholder="Digite sua senha"
                   required
+              
+          
+                   
+    
+                  
         
                 ></input>
-                <Eye className="olho" />
+
+                      <IconButton
+                        className="olho"
+                        onClick={handleClickShowPassword}
+                        onMouseDown={handleMouseDownPassword}
+                          >
+                        {values.showPassword ? <EyeSlash /> : <Eye/>}
+                      </IconButton>
+             
+         
+
               </div>
 
               <div className="esqueci">

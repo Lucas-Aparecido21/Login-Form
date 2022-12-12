@@ -127,12 +127,9 @@ body {
 }
 
 .olho {
-  position: absolute;
-
-  height: 2.5rem;
-  padding-top: 3px;
-  margin-left: -2rem;
-  width: 1.3rem;
+  position: absolute; 
+  left: -3rem;
+  color: var(--text-base)!important;
 }
 
 .esqueci {
