@@ -12,176 +12,101 @@
   }
 }
 
-@media (max-width: 575px) {
-  .formLogin {
-    background-color: var(--background);
+@media (min-width: 400px) and (max-width: 575px){
+
+
+  .formLogin{
+  background-color: var(--bacground-);
+  width: 100%;
+
+
+
+  }
+
+}
+
+@media (min-width: 300px) and (max-width: 399px){
+
+  .formLogin{
     width: 100%;
+    background-color: var(--bacground-);
   }
 
-  .input1 {
-    width: 25rem;
-  }
-
-  .input2 {
-    width: 25rem;
-  }
-
-  .envelope {
-    width: 2.8rem;
-    height: 2.2rem;
-  }
-
-  .cadeado {
-    width: 2.8rem;
-    height: 2.2rem;
-  }
-
-  .esqueci a {
-    padding-left: 6.18rem;
-  }
-  .entrar {
-    width: 25rem;
-  }
-
-  .footer p {
-    padding: 12px 5rem;
-  }
-}
-@media (min-width: 400px) and (max-width: 439px) {
-  .divSenha {
-    padding: 0;
-  }
-  .divEmail {
-    padding: 0 0 1rem;
-  }
-  body {
-    padding-left: 0.5rem;
-  }
-
-  .input1 {
-    width: 22rem;
-  }
-
-  .input2 {
-    width: 22rem;
+  .input1{
+    width: 16rem;
 
   }
 
-  .entrar {
-    width: 22rem;
-
-}
-
-.esqueci {
-  font-size: 13px;
-}
-
-
-
-@media (min-width: 320px) and (max-width: 369px) {
-  .formLogin {
-    background-color: var(--background);
-    width: 100%;
+  .input2{
+    width: 16rem;
   }
 
-  .input1 {
-    width: 18rem;
+  .entrar{
+    width: 16rem;
   }
 
-  .input2 {
-    width: 18rem;
-  }
+ 
 
-  .envelope {
-    width: 2.8rem;
-    height: 2.2rem;
-  }
-
-  .cadeado {
-    width: 2.8rem;
-    height: 2.2rem;
-  }
-
-  .esqueci a {
-    padding-left: 0.1rem;
-  }
-  .esqueci {
-    font-size: 15px;
-  }
-
-  .entrar {
-    width: 18rem;
-  }
-
-  .footer p {
+.footer p {
     padding: 12px 1rem;
-  }
-
-  .divEmail {
-    padding: 0;
-  }
-
-  .divSenha {
-    padding: 0;
-  }
-
-  body {
-    margin: 0;
-
-    padding-left: 0.3rem;
-  }
 }
 
-@media (min-width: 370px) and (max-width: 399px) {
-  .formLogin {
-    background-color: var(--background);
-    width: 100%;
-  }
 
-  .input1 {
-    width: 20rem;
-  }
+.esqueci{
+  font-size: 12px;
+}
 
-  .input2 {
-    width: 20rem;
-  }
-
-  .envelope {
-    width: 2.8rem;
-    height: 2.2rem;
-  }
-
-  .cadeado {
-    width: 2.8rem;
-    height: 2.2rem;
-  }
-
-  .esqueci a {
-    padding-left: 0.1rem;
-  }
-  .esqueci {
-    font-size: 15px;
-  }
-
-  .entrar {
-    width: 20rem;
-  }
-
-  .footer p {
-    padding: 12px 1rem;
-  }
-
-  .divEmail {
-    padding: 0;
-  }
-
-  .divSenha {
-    padding: 0;
-  }
-
-  body {
+  body{
     margin: 0;
+    padding:1.5rem;
 
-    padding-left: 0.3rem;
   }
+
+.formLoginInitial{
+font-size:12px ;
+}
+
+}
+
+@media (min-width: 80px) and (max-width: 300px){
+
+  .formLogin{
+    width: 100%;
+    background-color: var(--bacground-);
+  }
+
+  .input1{
+    width: 14rem;
+
+  }
+
+  .input2{
+    width: 14rem;
+  }
+
+  .entrar{
+    width: 14rem;
+  }
+
+ 
+
+.footer p {
+    padding: 10px 0.5rem;
+}
+
+
+.esqueci{
+  font-size: 10px;
+}
+
+  body{
+    margin: 0;
+    padding:1.5rem;
+
+  }
+
+.formLoginInitial{
+font-size:10px ;
+}
+
 }
